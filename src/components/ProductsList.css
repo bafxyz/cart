@@ -1,0 +1,18 @@
+.products-list-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list .listitem {
+  border-bottom: 1px solid #b2b2b2;
+  padding: 1rem 0;
+}
+
+.list .listitem:last-of-type {
+  border-bottom: 0;
+}
+
+.list .listtitle {
+  text-transform: uppercase;
+}

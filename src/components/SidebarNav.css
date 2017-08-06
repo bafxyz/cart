@@ -1,0 +1,77 @@
+.sidebar-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  background: white;
+}
+
+.sidebar-nav.-visible {
+  display: block;
+}
+
+.sidebar-nav::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  opacity: 0;
+}
+
+.sidebar-nav > .container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  height: 100%;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+  transform: translateX(-102%);
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.sidebar-nav.-visible::before {
+  opacity: 1;
+}
+
+.sidebar-nav > .hide {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav > .content {
+  padding-top: 32px;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar-nav > .content li {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 16px;
+}
+
+.sidebar-nav > .content li:hover {
+  background: #ccc;
+}

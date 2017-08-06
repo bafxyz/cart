@@ -1,0 +1,46 @@
+.doc-header {
+  align-items: center;
+  border-bottom: 1px solid #b2b2b2;
+  color: #4d4d4d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  user-select: none;
+}
+
+.doc-header > .-middle {
+  text-align: center;
+}
+
+.doc-header > .-last {
+  text-align: right;
+}
+
+.doc-header > .-first,
+.doc-header > .-last {
+  width: 20%;
+}
+
+.header-button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.header-logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
